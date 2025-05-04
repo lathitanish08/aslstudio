@@ -1,0 +1,11 @@
+{
+  "routes": {
+    "/aslstudio": {},
+    "/aslstudio/About": {},
+    "/aslstudio/Contact": {},
+    "/aslstudio/Home": {},
+    "/aslstudio/ProjectDetails": {},
+    "/aslstudio/Projects": {},
+    "/aslstudio/Services": {}
+  }
+}
