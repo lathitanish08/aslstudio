@@ -1,5 +1,5 @@
     <!-- Header Banner -->
-    <section class="banner-header middle-height section-padding bg-img" data-overlay-dark="5" data-background="img/slider/1.jpg">
+    <section class="banner-header middle-height section-padding bg-img" data-overlay-dark="5" data-background="img/slider/1.webp">
         <div class="v-middle">
             <div class="container">
                 <div class="row">
@@ -14,23 +14,26 @@
     <!-- Contact Box -->
     <div class="contact-box">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 animate-box" data-animate-effect="fadeInUp">
-                    <div class="item"> <span class="icon fa-solid fa-envelope"></span>
+            <div class="row d-flex flex-wrap">
+                <div class="col-lg-4 col-md-6 animate-box mb-30" data-animate-effect="fadeInUp">
+                    <div class="item h-100"> 
+                        <span class="icon fa-solid fa-envelope"></span>
                         <h5>e-Mail</h5>
-                        <p>architecturearchex.com</p> <i class="numb fa-solid fa-envelope"></i>
+                        <p>{{email}}</p> <i class="numb fa-solid fa-envelope"></i>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 animate-box" data-animate-effect="fadeInUp">
-                    <div class="item"> <span class="icon fa-solid fa-location-dot"></span>
+                <div class="col-lg-4 col-md-6 animate-box mb-30" data-animate-effect="fadeInUp">
+                    <div class="item h-100"> 
+                        <span class="icon fa-solid fa-location-dot"></span>
                         <h5>Our Address</h5>
-                        <p>0665 Broadway St. New York, USA</p> <i class="numb fa-solid fa-location-dot"></i>
+                        <p>{{address}}</p> <i class="numb fa-solid fa-location-dot"></i>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 animate-box" data-animate-effect="fadeInUp">
-                    <div class="item active"> <span class="icon fa-solid fa-phone"></span>
+                <div class="col-lg-4 col-md-6 animate-box mb-30" data-animate-effect="fadeInUp">
+                    <div class="item h-100"> 
+                        <span class="icon fa-solid fa-phone"></span>
                         <h5>Call Us</h5>
-                        <p>+(1) 123 456 7890</p> <i class="numb fa-solid fa-phone"></i>
+                        <p>{{phone}}</p> <i class="numb fa-solid fa-phone"></i>
                     </div>
                 </div>
             </div>
@@ -44,27 +47,11 @@
                 <div class="col-lg-5 col-md-12 mb-30">
                     <div class="form-box">
                         <h5>Get in touch</h5>
-                        <form method="post">
-                            <div class="row">
-                                <div class="col-md-12 form-group">
-                                    <input name="name" type="text" placeholder="Your Name *" required="">
-                                </div>
-                                <div class="col-md-12 form-group">
-                                    <input name="email" type="email" placeholder="Your Email *" required="">
-                                </div>
-                                <div class="col-md-12 form-group">
-                                    <input name="subject" type="text" placeholder="Subject *" required="">
-                                </div>
-                                <div class="col-md-12 form-group">
-                                    <textarea name="message" id="message" cols="30" rows="4" placeholder="Message *" required=""></textarea>
-                                </div>
-                                <div class="col-md-12">
-                                    <input name="submit" type="submit" value="Send Message">
-                                </div>
-                            </div>
-                        </form>
+
+                        <app-client-contact></app-client-contact>
                     </div>
                 </div>
+        
                 <!-- Map -->
                 <div class="col-lg-6 offset-lg-1 col-md-12">
                     <h5>Location</h5>

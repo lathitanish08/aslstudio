@@ -1,6 +1,6 @@
 <!-- Lets Talk -->
 <section class="lets-talk">
-    <div class="background bg-img bg-fixed section-padding" data-overlay-dark="5" data-background="img/slider/1.jpg">
+    <div class="background bg-img bg-fixed section-padding" data-overlay-dark="5" data-background="img/slider/1.webp">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -11,12 +11,10 @@
                     <div class="wrap">
                         <div class="social">
                             <a href="#" class="icon"> <i class="fa-brands fa-instagram"></i> </a>
-                            <a href="#" class="icon"> <i class="fa-brands fa-twitter"></i> </a>
-                            <a href="#" class="icon"> <i class="fa-brands fa-behance"></i> </a>
                             <a href="#" class="icon"> <i class="fa-brands fa-whatsapp"></i> </a>
                         </div>
-                        <div class="dv"></div> <a href="mailto:architecture&#64;archex.com">architecture&#64;archex.com</a>
-                        <div class="dv"></div> <a href="tel:+11234567890">+(1) 123 456 7890</a>
+                        <div class="dv"></div> <a href="mailto:{{email}}">{{email}}</a>
+                        <div class="dv"></div> <a href="tel:{{phone}}">{{phone}}</a>
                         <div class="dv"></div> <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" href="#0">Contact<i class="icon-right fa-light fa-arrow-up-right"></i></a>
                     </div>
                 </div>
@@ -36,9 +34,8 @@
                         <p>Archex architecture miss in the sapien sertiton miss bibenum the erat nesuen fermen.</p>
                         <div class="social-icons">
                             <ul class="list-inline">
-                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                                <li><a href="{{instagram}}"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="{{youtube}}"><i class="fa-brands fa-youtube"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -73,9 +70,25 @@
         <div class="bottom">
             <div class="row">
                 <div class="col-md-12">
-                    <p class="mb-0">Copyright © 2025 by Archex, Inc. All rights reserved.</p>
+                    <p class="mb-0">Copyright © 2025 by ASL Studio, Inc. All rights reserved.</p>
                 </div>
             </div>
         </div>
     </div>
 </footer>
+<!-- Popup Contact Form -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-box">
+                  <app-client-contact></app-client-contact>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
