@@ -13,9 +13,9 @@
 @import url("plugins/animate.min.css");
 
 /* == Icons (Flaticon, themify and fontawesome icons ==*/
-@import url("plugins/flaticon.css");
-@import url("plugins/themify-icons.css");
-/* @import url("plugins/font-awesome-pro.css"); */
+@import url("plugins/flaticon.css");  
+@import url("plugins/themify-icons.css"); 
+@import url("../fonts/fontawesome/css/all.css"); 
 
 /* == Magnific-popup gallery  == */
 @import url("plugins/magnific-popup.css");
@@ -23,10 +23,7 @@
 /* == YouTubePopUp == */
 @import url("plugins/YouTubePopUp.css");
 
-<<<<<<< HEAD
-/* == Vegas Slider ==
-@import url("plugins/vegas.slider.min.css"); */
-=======
+
+
 /* == Vegas Slider == 
 @import url("plugins/vegas.slider.min.css");*/
->>>>>>> c8dc0f05 (template)
