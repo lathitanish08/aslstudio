@@ -771,7 +771,11 @@ hr {
 .fullscreen-offcanvas .nav-link {
     font-size: 1.6rem;
 }
-
+.offcanvas-nav-wrapper {
+    max-height: 100%;
+    overflow-y: auto;
+    padding: 1rem 0;
+}
 
 /* ======= Navbar style ======= */
 .navbar {
